@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Classwork lesson 4</title>
+<style>
+    h2 {
+text-align: center;
+} 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    }
+    #change_size{
+transition: all 2s ease-in-out 0.5s
+}
+
+#change_color {
+transition: all 1s ease
+}
+
+#change_size:hover {
+    width: 400px;
+}
+
+    #change_color:hover{
+background: blue;
+}
+
+    #move {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+/*translate-перемещение по оси Х и Y*/
+    #move:hover{
+transform: translate(100px,200px);
+transition-duration: 1s;
+}
+
+/*scale-изменение размеров по оси Х и Y*/
+    #with2heigh:hover{
+transform: scale(0.5,2);
+transition-duration: 1s;
+}
+
+
+    div[class^="p"] {
+background: none;
+border: 1px solid red;
+width: 130px;
+height: 130px;
+margin: 50px auto;
+}
+
+    .p1 {
+transform-origin: 0% 100%;
+}
+
+    .p2 {
+transform-origin: center center;
+}
+
+    .p2:hover {
+transform: rotate(45deg);
+transition-duration: 1s;
+}
+
+    .p1:hover {
+transform: rotate(30deg);
+transition-duration: 1s;
+}
+
+    .p3 {
+transform-origin: 100% 0%;
+}
+
+    .p3:hover {
+transform: rotate(-45deg);
+transition-duration: 1s;
+}
+
+    .p4 {
+transform-origin: right bottom;
+}
+
+    .p4:hover{
+transform: scale(2,2);
+transition-duration: 1s;
+}
+    .p5 {
+transform-origin: bottom left;
+}
+
+    .p5:hover {
+transform: skewX(45deg);
+transition-duration: 1s;
+}
+
+    .border {
+border: 1px solid black;
+width: 100%;
+height: 150px;
+background: none;
+}
+
+    .sqare {
+border: 1px solid red;
+margin-top: 10px;
+width: 80px;
+height: 80px;
+background: yellow;
+animation-name: kvadrat;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+animation-timing-function: ease;
+animation-delay: 2s;
+}
+
+
+.line {
+width: 350px;
+height: 40px;
+border: 1px solid blue;
+margin-top: 10px;
+background: none;
+transform-origin: left;
+transition-duration: 1.5s;
+transition-timing-function: ease;
+transition-property: all;
+}
+
+    .line:hover~div {
+width: 700px;
+}
+
+    #ramka {
+width: 300px;
+height: 300px;
+border:1px solid black;
+background: none;
+margin: 10px auto;
+}
+    #ramka>#sharik {
+width: 30px;
+height: 30px;
+background: black;
+border-radius: 50%;
+animation-name: sharik;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+
+
+    @keyframes kvadrat {
+        0% {
+}
+        50% {
+transform: translateX(900px);
+}
+        100% {
+transform: translateX(0px);
+        }
+}
+
+    @keyframes sharik {
+        0% {
+}
+        40% {
+transform: translate(30px,270px);
+ 
+}
+        60%{
+transform: translate(50px,220px);
+ 
+
+    }
+        70% {
+transform: translate(70px,270px)
+}
+        80% {
+transform: translate(90px,250px)
+}
+
+        90%{
+transform: translate(110px,270px)
+}
+        100%{
+transform: translate(120px,270px)
+}
+
+    }
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<h2>Задание 1</h2>
+<div id="change_size"></div>
+<p>Наведите указатель мыши на элемент div выше.</p>
+<h2>Задание 2</h2>
+<div id=change_color></div>
+<h2>Задание 3</h2>
+<div id="move"></div>
+<h2>Задание 4</h2>
+<div id="with2heigh"></div>
+<h2>Задание 5</h2>
+<div class="p1"></div>
+<div class="p2"></div>
+<div class="p3"></div>
+<div class="p4"></div>
+<div class="p5"></div>
+<h2>Задание 6</h2>
+<div class="border">
+<div class="sqare"></div>
+</div>
+<h2>Задание 7</h2>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+
+<h2>Задание 8</h2>
+
+<div id="ramka">
+<div id="sharik"></div>
+</div>
+
+
+ 
+
+</body>
+</html>

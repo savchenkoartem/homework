@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex site</title>
+<style>
+    .conteiner {
+width: 80%;
+border: 5px solid yellow;
+margin: 0 auto;
+}
+
+    header {
+height: 350px;
+border-bottom: 5px solid yellow;
+    }
+
+    ul {
+display: flex;
+padding: 0;
+margin: 0;
+justify-content:space-between;
+align-items: flex-end;
+}
+    li {
+list-style: none;
+}
+
+    #picture1{
+align-self: flex-start;
+margin:20px 0 0 20px;
+
+}
+
+    .q {
+width: 15px;
+height: 15px;
+margin-right: 8px;
+color: gray;
+}
+    .y {
+color: gray;
+font-family: sans-serif;
+font-weight: 400;
+}
+
+  .y:hover{
+color: orangered;
+cursor: pointer;
+}
+
+    #alevel {
+font-size: 100px;
+font-family: sans-serif;
+color: crimson;
+margin-top: 30px;
+}
+    #css {
+font-size: 50px;
+color: crimson;
+float: right;
+margin-top:10px;
+font-family: sans-serif;
+}
+    #csi {
+font-size: 60px;
+color: white;
+background-color: green;
+}
+    #cruto {
+font-size: 60px;
+color: white;
+background-color: #808000;
+}
+
+    main {
+display: flex;        
+
+    }
+
+    #sidebar1,#sidebar2,#sidebar3{
+flex: 1;
+}
+    #sidebar1 {
+background-color: #729FCF;
+color: white;
+font-size: 30px;
+border-right: 5px solid yellow;
+padding: 20px;
+text-indent: 30px;
+}
+
+    #sidebar1::first-letter{
+font-size: 50px;
+}
+
+    #sidebar2{
+background-color: #168253;
+border-right: 5px solid yellow;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+    #selectors,.blockright {
+display: block;
+}
+
+    .text {
+list-style: disc;
+margin-left: 40px;
+font-size: 25px;
+color: yellow;
+}
+
+    #head{
+text-align: center;
+font-size: 40px;
+color: white;
+font-weight: 500;
+}
+
+    #sidebar3 {
+background-color: #E8F2A1;
+display: flex;
+justify-content: center;
+}
+
+    #titleLi {
+font-size: 25px;
+font-style: italic;
+margin-bottom: 20px;
+margin-top: 20px;
+}
+
+    .side3 {
+margin-left: 50px;
+font-size: 25px;
+}
+
+    .side3::before{
+content: "\2718";
+margin-right: 30px;
+font-size: 15px;
+font-weight: 600;
+}
+
+    #picturet {
+width: 180px;
+max-width: 180px;
+max-height: 100px;
+}
+
+    #chashka>img {
+width: 290px;
+height: 150px;
+margin: 10px 0 0 20px
+}
+
+    address {
+width: 400px;
+height: 150px;
+background-color: gainsboro;
+margin: 70px 30px 20px 0;
+display: flex;
+justify-content: space-between;
+}
+
+    footer{
+border-top: 5px solid yellow;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+    .citi,.adres {
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+}
+    .citi {
+margin: 15px 0px 0px 10px;
+}
+
+    .adres {
+align-self: center;
+margin-top: 40px;
+}
+
+
+
+/*MEDIA*************************************************************************************/
+    @media (max-width:550px){
+    .conteiner {
+width: 90%;
+border: 0.5px solid yellow;
+margin: 0 auto;
+}        
+
+nav{
+display: none;
+}
+        #alevel,#css,#csi,#cruto {
+font-size: 40px;
+}
+
+        .adres,.citi {
+font-size: 20px;
+}
+
+
+    #chashka>img {
+max-width: 50vw;
+max-height: 15vh;
+}        
+
+#sidebar1,#head,.text,#titleLi,.side3 {
+font-size: 3vh;
+padding: 5px;
+border-right: none;
+}
+        #sidebar2 {
+border-right: none
+}
+        main {
+flex-direction: column;
+}
+
+        header {
+border-bottom: none;
+}
+        footer {
+border-top: none;
+}
+        address {
+width: 100vw;
+height: 10vh;
+margin: 0;
+display: flex;
+justify-content: space-between;
+
+}
+        .adres,.citi {
+margin-top: 1.5vh;
+}
+}
+
+    @media (max-width:880px) {
+
+
+        #picture1>img,
+         .y>img,
+#picture2>img
+ {
+display: none;
+}
+    .conteiner {
+width: 90%;
+border: 0.5px solid yellow;
+margin: 0 auto;
+}
+
+        nav {
+margin-top: 20px;
+}        
+
+
+
+
+    #chashka>img {
+max-width: 50vw;
+max-height: 15vh;
+}        
+
+#sidebar1,#head,.text,#titleLi,.side3 {
+font-size: 150%;
+padding: 5px;
+border-right: none;
+}
+        #sidebar2 {
+border-right: none
+}
+        main {
+flex-direction: column;
+}
+
+        header {
+border-bottom: none;
+}
+        footer {
+border-top: none;
+}
+        address {
+width: 100vw;
+height: 10vh;
+margin: 0;
+display: flex;
+justify-content: space-between;
+
+}
+        .adres,.citi {
+margin-top: 1.5vh;
+}
+}
+
+    @media (max-width:1100px) {
+
+        .y>img {
+display: none;
+}
+
+        #picture1>img {
+display: none;
+}
+    
+}
+
+</style>
+</head>
+<body>
+<div class="conteiner">
+<header>
+
+
+
+<nav>
+<ul>
+<li id="picture1"><img src="img/settings.png" alt="" width="50px" height="50px"></li>
+<li class="y"><img class="q" src="img/magnifying-glass.png" alt="">Усі</li>
+<li class="y"><img class="q" src="img/avatar.png" alt="">Зображення</li>
+<li class="y"><img src="img/monitor.png" alt="" class="q">Відео</li>
+<li class="y"><img src="img/chat.png" alt="" class="q">Новини</li>
+<li class="y"><img src="img/pokupki.png" alt="" class="q">Покупки</li>
+<li class="y"><img src="img/reload.png" alt="" class="q">Більше</li>
+<li class="y">Налаштування</li>
+<li id="picture2"><img id="picturet" src="img/alevel.png" alt=""></li>
+
+    </ul>
+    </nav>
+
+
+    
+<div id="alevel">A-LeVeL</div>
+    <div id="css"><span id="csi">CSS</span> це <span id="cruto">круто</span></div>
+  
+</header>
+<main>
+<div id="sidebar1"><b>Каскадные таблицы стилей (CSS)</b> используются для описания внешнего вида документа, написанного языком разметки. CSS привносит <b>жизнь</b> в HTML-документ, выбирая шрифты, применяя цвета, определяя отступы, позиционируя элементы, анимируя взаимодействия и многое другое.<b> Объявление стиля состоит из двух частей:</b> элемента веб-страницы — <b><i>селектора</i></b>, и команды форматирования — <b><i>блока объявления.</i></b></div>
+<div id="sidebar2">
+<ul id="selectors">
+<li id="head">Селекторы CSS:</li>
+<li class="text">универсальными;</li>
+<li class="text">cелектором элемента;</li>
+<li class="text">классовый селектор;</li>
+<li class="text">селектор ID.</li>
+</ul>
+</div>
+<div id="sidebar3">
+<ul class="blockright">
+<li id="titleLi">Примеры селекторов:</li>
+<li class="side3">* {}</li>
+<li class="side3">p.class {}</li>
+<li class="side3">*.class {}</li>
+<li class="side3">class {}</li>
+<li class="side3">span {}</li>
+<li class="side3">div#id</li>
+<li class="side3">span#id</li>
+<li class="side3">article#id</li>
+</ul>
+</div>
+</main>
+<footer>
+<div id="chashka"><img src="img/chashka.jpg" alt=""></div>
+<address>
+<div class="citi">Контакти: Харьков</div>
+<div class="adres">ул. Дружбы 48</div>
+</address>
+</footer>
+
+
+
+
+</div>
+    
+</body>
+</html>

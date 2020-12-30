@@ -1,0 +1,39 @@
+blockquote {
+color: brown;
+background-color: black;
+}
+table {
+color: blueviolet;
+border-color: crimson;
+}
+
+/*указывыю первого ребенка от h3 в контейнере text-box*/
+.text-box h3:first-child {
+color: pink;
+}
+#greycol {
+color: gray;
+}
+.text-box div p{
+color: red;
+}
+
+.yellow {
+color: yellow;
+}
+
+.text-box p:nth-child(7) {
+color: green;
+}
+
+.bg-box {
+width: 700px;
+height: 400px;
+background: url(img/pole-zelen-trava-dom-derevya.jpg) center center/300px 200px no-repeat, 
+url(img/grass-png-images-pictures-transparent-28.png) bottom/auto 100px repeat-x,
+url(img/lamp-png-0.png) top/40px 40px repeat-x,
+url(img/Ёжик.png) left/20px 20px repeat-y,
+url(img/58eb07b830eab15b56162788.png) right/40px 40px repeat-y;
+background-color: #679B45;
+margin: 30px auto;
+}

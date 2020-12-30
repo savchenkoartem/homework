@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework5</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap" rel="stylesheet">
+<style>
+    @font-face {
+	font-family: "Mistral normal";
+src:url("fonts/mistral-normal.ttf");
+	font-weight: normal;
+        font-style: normal;}
+
+    *{
+margin: 0;
+box-sizing: border-box;
+}
+    header {
+height: 220px;
+background-color: #7614C9;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+    .homework,.cifra {
+font-family: "Mistral normal";
+color: white;
+font-size: 72px;
+letter-spacing: 5px;
+padding-left: 100px;
+}
+    .cifra {
+font-size: 120px;
+padding-right: 180px;
+}
+
+    .a {
+color: #F56704;
+font-size: 60px;
+font-family: 'Crimson Text', serif;
+}
+    .alevel {
+width: 280px;
+height: 100px;
+background-color:#270742;
+letter-spacing: 3px;
+color: orangered;
+font-size: 60px;
+font-family: 'Crimson Text', serif;
+padding-left: 20px;
+padding-top: 10px;
+position: relative;
+
+}
+
+    .tire {
+font-size: 50px;
+color: white;
+vertical-align: 5px;
+}
+
+    .kvadrat {
+width: 40px;
+height: 30px;
+background-color: #7614C9;
+position: absolute;
+top:0px;
+right: 0px;
+}
+
+    .kvadrat2{
+width: 65px;
+height: 30px;
+background-color: #270742;
+        position: absolute;
+top: -30px;
+right: -25px;
+}
+    .kvadrat3 {
+width: 25px;
+height: 30px;
+background-color: #270742;
+        position: absolute;
+top: 0px;
+right: -25px;
+}
+
+
+    nav {
+/*width: 20%;*/
+max-height: 100vh;
+margin: 0 10px 0 20px;
+flex: 1;
+position: relative;
+}
+
+
+    label {
+display: flex;
+height: 40px;
+width: 100%;
+font-family: 'Nova Flat', cursive;
+margin-top: -15px;
+justify-content: flex-start;
+align-items: center;
+padding-left: 15px;
+}
+
+    label:hover{
+background-color: #7614C9;
+color: white;
+transition-duration: 0.3s;
+transition-timing-function: ease;
+transition-property: all;
+}
+
+    #allworks {
+display: flex;
+height: 50px;
+width: 100%;
+margin-top: 30px;
+background:none;
+color: black;
+justify-content: flex-start;
+cursor: pointer;
+
+        }
+
+/*Управление чекбоксами*/
+    .checkin:not(:checked)~label{
+display: none;
+}
+
+    .checkin:checked~#allworks::before{
+content: "\2190";
+color: orangered;
+font-size: 20px;
+margin-right: 10px;
+}
+    
+.checkin:not(:checked)~ul{
+display: none;
+}
+    .label:not(:checked)~.block,
+    .label1:not(:checked)~.block1,
+    .label2:not(:checked)~.block2,
+    .label3:not(:checked)~.block3,
+    .label4:not(:checked)~.block4{
+display: none;
+}      
+
+
+    .main_content {
+display: flex;
+}
+
+    input[type="checkbox"] {
+visibility: hidden;
+}
+
+    li {
+list-style: none;
+}
+    a{
+text-decoration: none;
+color: #7614C9;
+margin-top: 10px;
+font-style: italic;
+font-weight: 600;
+letter-spacing: 3px;
+text-transform: uppercase;
+}
+
+    a:hover{
+color: orangered;
+}
+
+    iframe {
+width: 80%;
+height: 600px;
+margin-top: 50px;
+border: 2px solid #7614C9;
+}
+
+    .content {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex: 4;
+}
+
+    .border {
+width: 10px;
+height: 80%;
+background-color: mistyrose;
+opacity: .8;
+float: right;
+position: absolute;
+top: 80px;;
+right: -10px;
+}
+
+</style>
+</head>
+<body>
+<div class="conteiner">
+<header>
+<div class="homework">Homework</div>
+    <div class="alevel"><span class="a">A</span><span class="tire">-</span>Level
+<div class="kvadrat"></div>
+    
+<div class="kvadrat2"></div>
+<div class="kvadrat3"></div>
+    </div>
+<div class="cifra">1</div>
+</header>
+
+
+
+<div class="main_content">
+<nav>
+    <input type="checkbox" id="cb1" class="checkin"> <label for="cb1" id="allworks">All works</label>
+     
+
+    <input type="checkbox" id="cb2" class="label"><label for="cb2">Homeworks1</label>
+<ul class="block">
+<li><a href="homeworks/dz1/index.html" target="window">Task1</a></li>
+<li><a href="homeworks/part_2/Task_5/form.html" target="window">Form HTML</a></li>
+<li><a href="homeworks/part_2/Task_1/nginx_fixed.html" target="window">NGNX fix</a></li>
+<li><a href="homeworks/part_2/Task_2/html4_reissue.html" target="window">HTML4</a></li>
+<li><a href="homeworks/part_2/Task_3/layout_block.html" target="window">BLOCK SITE</a></li>
+<li><a href="homeworks/part_2/Task_3/layout_table.html" target="window">TABLE SITE</a></li>
+        </ul>
+   
+ 
+<input type="checkbox" id="cb3" class="label1"><label for="cb3">Homeworks2</label>
+<ul class="block1">
+    <li><a href="homeworks/dz2/classwork.html" target="window">CLASSWORK</a></li>
+    <li><a href="homeworks/dz2/dz2.html" target="window">HOME2 All TASKS</a></li>
+    <li><a href="homeworks/classwork/Yaica/yaichki.html" target="window">EGGS</a></li>
+</ul>
+ 
+ 
+<input type="checkbox" id="cb4" class="label2"><label for="cb4">Homeworks3</label>
+<ul class="block2">
+    <li><a href="homeworks/dz3/Lesson3-Homework/Home1.html" target="window">FLOAT</a></li>
+    <li><a href="homeworks/dz3/Task_1.html" target="window">HOVER</a></li>
+    <li><a href="homeworks/dz3/Task_2.html" target="window">MAZDA</a></li>
+    <li><a href="homeworks/dz3/Task_3.html" target="window">FLOAT TEXT</a></li>
+    <li><a href="homeworks/dz3/Task_4.html" target="window">ARROWS</a></li>
+    <li><a href="homeworks/dz3/Task_5.html" target="window">POSITION</a></li>
+    <li><a href="homeworks/dz3/Task_6.html" target="window">FIXED</a></li>
+    <li><a href="homeworks/dz3/Task_7.html" target="window">INDICATE</a></li>
+</ul>
+ 
+<input type="checkbox" id="cb5" class="label3"><label for="cb5">Homeworks4</label>
+<ul class="block3">
+    <li><a href="homeworks/dz4/Home_lesson_4/Home_lesson_4_task3.html" target="window">MENU</a></li>
+    <li><a href="homeworks/dz4/Home_lesson_4/Home_lesson_4_task4.html" target="window">MOVE SQARE</a></li>
+    <li><a href="homeworks/dz4/lesson_4_tasks.html" target="window">ANIMATION</a></li>
+</ul>
+ 
+ 
+<input type="checkbox" id="cb6" class="label4"><label for="cb6">Homeworks5</label>
+<ul class="block4">
+    <li><a href="homeworks/dz5/flex_first_lesson.html" target="window">ADAPTIVE</a></li>
+</ul>
+ 
+
+<div class="border"></div>
+
+</nav>
+
+
+<div class="content">
+<iframe name="window"></iframe>
+</div>
+
+     
+    </div>
+
+</div>
+    
+</body>
+</html>

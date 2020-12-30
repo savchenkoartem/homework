@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home work_lesson 4</title>
+<style>
+    *{
+margin: 0;
+box-sizing: border-box;
+}
+    .menu {
+width: 300px;
+height: 100vh;
+background-color: grey;
+transform: translateX(-90%);
+transition-duration: 0.5s;
+transition-property: all;
+transition-timing-function: ease-out;
+}
+
+  .menu:hover{
+transform: translateX(0);
+      
+}
+
+    .menu:hover .here {
+visibility: hidden;
+
+    }
+
+
+
+
+    .content {
+padding-top: 200px;
+width: 300px;
+height: 300px;
+/*text-align: center;*/
+line-height: 50px;
+}
+
+    a{
+color: beige;
+display: block;
+font-size: 25px;
+font-weight: 800;
+text-transform: uppercase;
+padding-left: 40px;
+text-decoration: none;
+}
+
+    .here {
+transform: rotate(90deg);
+text-transform: uppercase;
+font-size: 20px;
+color: white;
+position: absolute;
+top:400px;
+right: -43px;
+font-weight: 700px;
+}
+
+    .content {
+position: relative;
+}
+
+    .content + div {
+display: none;
+}
+
+    a:hover{
+color: lightsalmon;
+}
+
+
+    a::before{
+content: "\2666";
+padding-right: 20px;
+color: yellow;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="conteiner">
+<div class="menu">
+<div class="content">
+<div class="here">Menu here</div>
+    <a href="#">Home</a>
+    <a href="#">Contacts</a>
+<a href="#">our team</a>
+<a href="#">About</a>
+<a href="#">News</a>
+</div>
+</div>
+</div>
+    
+</body>
+</html>

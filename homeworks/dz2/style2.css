@@ -1,0 +1,119 @@
+
+#cont {
+width: 90%;
+height: 100vh;
+margin: 2px auto;
+/*    background-color:aquamarine;*/
+}
+
+header {
+height: 200px;
+background:url(img/znachok.png) left top/auto no-repeat;
+background-color: #DDDDDD;
+font-family: sans-serif;
+}
+
+/*
+section {
+background-color: aquamarine;
+height: 700px;
+}
+*/
+
+
+
+.leftside,.rightside,.centerside {
+width: 32.8%;
+height: 700px;
+/*background-color: #729FCF;*/
+float: left;
+margin: 2px;
+}
+
+.leftside {
+background-color: #729FCF;
+}
+.centerside {
+background-color: #168253;
+}
+.alevel {
+text-align: center;
+font-size: 60px;
+color: white;
+padding-top: 30px;
+}
+.cssCe {
+text-align: right;
+padding-top: 20px;
+font-size: 40px;
+color: white;
+letter-spacing: 5px;
+word-spacing: 5px;
+}
+.cssCe span:first-of-type{
+background: #008000;
+}
+
+.cssCe span:last-child{
+background-color: #808000;
+}
+.leftside {
+color: white;
+font-size: 30px;
+}
+.blockleft {
+padding: 10px;
+text-indent: 25px;
+}
+
+.blockleft::first-letter{
+font-size: 50px;
+font-weight: 800;
+}
+
+.blockcenter ul {
+padding-top: 250px;
+}
+
+.caption {
+color: white;
+font-size: 30px;
+text-align: center;
+list-style: none;
+}
+
+.caption~li {
+list-style: none;
+font-size: 16px;
+color: #FFFF38;
+}
+
+.caption~li::before {
+content: "•";
+color: black;
+padding-right: 20px;
+}
+
+.blockright .titleLi {
+list-style: none;
+font-style: italic;
+font-size: 20px;
+    padding-top: 20px;
+text-align: center;
+}
+.titleLi~li {
+list-style: none;
+font-size: 20px;
+padding-left: 100px;
+}
+
+.titleLi~li::before {
+content: " ❌";
+padding-right: 20px;
+font-size: 13px;
+font-weight: 800;
+}
+
+
+
+

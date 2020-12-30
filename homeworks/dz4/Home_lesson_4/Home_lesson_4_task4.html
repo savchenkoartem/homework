@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home4</title>
+<style>
+    .conteiner {
+width: 500px;
+height: 500px;
+margin: 0 auto;
+}
+    h2 {
+text-align: center;
+}
+
+    .sqare {
+width: 100px;
+height: 100px;
+background-color: red;
+animation-name: dvizh;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: ease;
+}
+
+    @keyframes dvizh {
+        0%{
+}
+        25%{
+transform: translateY(300px);
+background-color: blue;
+}
+        50%{
+transform: translate(300px,300px);
+background-color: green;
+}
+        75%{
+transform: translate(300px,0px);
+background-color: yellow;
+}
+        100%{
+transform: translateX(0px);
+background-color: red;
+}
+
+}
+
+</style>
+</head>
+<body>
+<div class="conteiner">
+<h2>Задание 4</h2>
+<div class="sqare"></div>
+    </div>
+    
+</body>
+</html>
